@@ -15,7 +15,7 @@ public class SalesDAO {
 	private JdbcTemplate jdbcTemplate;
 	
 	public List<Sale> list(){
-		String sql = "SELECT * FROM SALES";
+		String sql = "SELECT * FROM SALESSS";
 		List<Sale> listSale = jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(Sale.class));
 		return listSale;
 	}
