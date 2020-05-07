@@ -17,5 +17,11 @@ public class AppController {
 		model.addAttribute("listSale", listSale);
 		return "index";
 	}
+	@RequestMapping("/new")
+	public String showNewForm(Model model) {
+		Sale sale = new Sale();
+		model.addAttribute(sale);
+		return "new_form";
+	}
 
 }
